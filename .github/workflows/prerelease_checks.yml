@@ -8,10 +8,7 @@ on:
     - cron: "0 10 * * 1"
   # Allow manual triggering: <https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch>.
   workflow_dispatch:
-  # Anytime a PR modifies the list of packages to publish.
-  pull_request:
-    paths:
-      - "packages_to_publish.yml"
+  # Temporary diagnostic: PR trigger removed. Do not merge.
 
 jobs:
   check-missing-dependency-versions:

@@ -1,12 +1,8 @@
 name: "Check Changelog"
 
+# Temporary diagnostic: no PR changelog job. Do not merge.
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
-    paths:
-      - "examples/demo-rollup/**/*.rs"
-      - "examples/demo-rollup/**/*.toml"
-      - "!examples/demo-rollup/sov-soak-testing/**"
+  workflow_dispatch: {}
 
 jobs:
   check-changelog:

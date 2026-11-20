@@ -6,9 +6,7 @@ on:
     paths: &typescript-paths
       - "typescript/**"
       - "crates/universal-wallet/**"
-  pull_request:
-    types: [opened, synchronize]
-    paths: *typescript-paths
+  # Temporary diagnostic: PR trigger removed. Do not merge.
   workflow_dispatch: {}
 
 jobs:
